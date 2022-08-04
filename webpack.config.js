@@ -5,6 +5,7 @@ module.exports = {
 	output: {
 		filename: "main.js",
 		path: path.resolve(__dirname, "dist"),
+		assetModuleFilename: "images/[hash][ext][query]",
 	},
 	devServer: {
 		static: path.resolve(__dirname, "dist"),
@@ -13,6 +14,10 @@ module.exports = {
 	},
 	module: {
 		rules: [
+			{
+				test: /\.(png|svg|jpg|jpeg|gif)$/i,
+				type: "asset/resource",
+			},
 			{
 				test: /\.(scss)$/,
 				use: [
@@ -36,17 +41,8 @@ module.exports = {
 				],
 			},
 			{
-				test: /\.(png|svg|jpg|jpeg|gif|webp)$/i,
-				type: "asset/resource",
-			},
-			{
-				test: /\.html/,
-
-				type: "asset/resource",
-
-				generator: {
-					filename: "static/[hash][ext][query]",
-				},
+				test: /\.html$/i,
+				loader: "html-loader",
 			},
 		],
 	},

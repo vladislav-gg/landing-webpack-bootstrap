@@ -13,7 +13,7 @@ footer {
 }
 
 .right-side {
-	width: 325px;
+	width: 345px;
 	h4 {
 		font-weight: 400;
 	}
@@ -24,6 +24,11 @@ footer {
 }
 .footer-logo {
 	margin-bottom: 50px;
+}
+.footer-bottom {
+	p {
+		font-size: 0.938rem;
+	}
 }
 
 @media screen and (max-width: 768px) {

@@ -78,18 +78,23 @@
 
 	z-index: 10;
 }
+
+.carousel-mobile-wrapper {
+	overflow: hidden;
+	position: relative;
+	width: 327px;
+	height: 184px;
+	margin-bottom: 16px;
+	img {
+		width: 100%;
+		height: 100%;
+		flex-grow: 0;
+		object-fit: cover;
+	}
+}
+
 @media screen and (max-width: 768px) {
 	.carousel-wrap {
 		padding: 32px 24px 16px 24px;
-	}
-	.swiper-wrapper {
-		display: flex;
-		flex-direction: column;
-	}
-	.swiper-slide {
-		flex-direction: column;
-		margin-top: 16px;
-		width: 327;
-		height: 184;
 	}
 }
