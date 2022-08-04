@@ -1,0 +1,42 @@
+footer {
+	width: 100%;
+	background: linear-gradient(180deg, #ff4d54 11.72%, #cc3e43 100%);
+	height: 100%;
+	color: white;
+}
+
+.footer-wrapper {
+	padding: 80px 170px 55px 120px;
+}
+.footer-bottom {
+	margin-top: 95px;
+}
+
+.right-side {
+	width: 325px;
+	h4 {
+		font-weight: 400;
+	}
+}
+
+.right-side-bottom {
+	width: 325px;
+}
+.footer-logo {
+	margin-bottom: 50px;
+}
+
+@media screen and (max-width: 768px) {
+	.footer-wrapper {
+		padding: 64px 24px 40px 24px;
+	}
+	.footer-bottom {
+		width: 300px;
+		p {
+			font-size: 0.75rem;
+		}
+	}
+	.right-side-bottom {
+		width: 171px;
+	}
+}

@@ -1,0 +1,91 @@
+@import "~bootstrap/scss/bootstrap";
+
+@import "fonts";
+@import "variables";
+@import "header";
+@import "main-section";
+@import "button";
+@import "services-section";
+@import "carousel-swiper";
+@import "footer";
+
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body,
+html {
+	color: $main-black;
+	background: #fff;
+	font-family: $font-family-dm-sans;
+}
+
+h1 {
+	font-size: 3rem;
+	line-height: 3.5rem;
+	font-weight: 700;
+	margin-top: 0;
+}
+
+h2 {
+	font-size: 2.5rem;
+	line-height: 3rem;
+	font-weight: 700;
+	margin-top: 0;
+}
+
+h3 {
+	font-size: 1.75rem;
+	line-height: 2.25rem;
+	font-weight: 400;
+}
+h4 {
+	font-size: 1.375rem;
+	line-height: 2rem;
+	font-weight: 700;
+}
+
+p {
+	font-size: 1.125rem;
+	line-height: 1.75rem;
+	font-weight: 400;
+}
+
+// Mobile typography
+
+@media screen and (max-width: 765px) {
+	h1 {
+		font-size: 1.75rem;
+		line-height: 2rem;
+		font-weight: 700;
+		margin-top: 0;
+	}
+
+	h2 {
+		font-size: 1.375rem;
+		line-height: 1.5rem;
+		font-weight: 700;
+		margin-top: 0;
+	}
+
+	h3 {
+		font-size: 1rem;
+		line-height: 1.5rem;
+		font-weight: 400;
+	}
+	h4 {
+		font-size: 1rem;
+		line-height: 1.5rem;
+		font-weight: 700;
+	}
+
+	p {
+		font-size: 0.875rem;
+		line-height: 1.25rem;
+		font-weight: 400;
+	}
+}

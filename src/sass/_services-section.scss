@@ -1,0 +1,69 @@
+.services-section {
+	width: 100%;
+}
+.services-wrap {
+	padding: 96px 120px;
+	// display: flex;
+	// justify-content: space-between;
+}
+.services-accordion {
+	width: 684px;
+}
+.services-text {
+	max-width: 376px;
+	h4 {
+		color: $primary-color;
+	}
+}
+summary {
+	display: flex;
+	justify-content: space-between;
+	font-weight: bold;
+	&::after {
+		display: inline-block;
+		transition: 0.2s;
+		content: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath d='M13.8 0.599976V13.8H0.599976V16.2H13.8V29.4H16.2V16.2H29.4V13.8H16.2V0.599976H13.8Z' fill='%232F2F3B' /%3E%3C/svg%3E");
+	}
+}
+
+details {
+	padding: 32px 0;
+	border-top: 1px solid $main-black;
+	box-sizing: border-box;
+	cursor: pointer;
+	display: flex;
+	flex-wrap: nowrap;
+	word-wrap: break-word;
+	p {
+		margin-top: 24px;
+		width: 608px;
+	}
+}
+
+details[open] summary::after {
+	transform: rotate(45deg);
+}
+
+#lower-accordion {
+	border-bottom: 1px solid $main-black;
+}
+
+@media screen and (max-width: 768px) {
+	.services-wrap {
+		width: 327px;
+		padding: 48px 24px 48px 24px;
+	}
+	.services-accordion {
+		width: 327px;
+	}
+	.services-text {
+		width: 327px;
+	}
+	details {
+		padding: 16px 0;
+		p {
+			margin-top: 16px;
+			width: 287px;
+		}
+	}
+}

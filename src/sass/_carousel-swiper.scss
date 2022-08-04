@@ -1,0 +1,87 @@
+.carousel-section {
+	position: relative;
+}
+.carousel-wrap {
+	padding-left: 120px;
+	padding-top: 96px;
+	padding-bottom: 96px;
+}
+
+.swiper {
+	width: 100%;
+	height: 100%;
+}
+
+.swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	display: flex;
+	justify-content: center;
+	-webkit-align-items: center;
+	align-items: center;
+}
+
+.swiper-slide {
+	background: url("/src/images/carousel_slide1.png") no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+	width: 625px;
+	height: 327px;
+}
+
+// .swiper-slide {
+// 	width: 100%;
+// }
+
+.swiper-slide:nth-child(2n) {
+	background: url("/src/images/carousel_slide2.gif") no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+}
+
+.swiper-slide:nth-child(3n) {
+	background: url("/src/images/carousel_slide3.jpg") no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+}
+.swiper-slide:nth-child(4n) {
+	background: url("/src/images/office_chat.jpg") no-repeat center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	overflow: hidden;
+	position: relative;
+}
+
+.swiper-button-next {
+	&::after {
+		content: url("data:image/svg+xml,%3Csvg width='128' height='128' viewBox='0 0 128 128' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='128' height='128' rx='64' fill='%23FFDE00'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M65.866 76.3658L69.1341 79.6339L84.7659 63.9999L69.1341 48.3658L65.866 51.6339L75.8996 61.6657L42.9998 61.6657V66.3316H75.902L65.866 76.3658Z' fill='%232F2F3B'/%3E%3C/svg%3E%0A");
+	}
+	position: absolute;
+	top: 90px;
+	right: 150px;
+
+	z-index: 10;
+}
+@media screen and (max-width: 768px) {
+	.carousel-wrap {
+		padding: 32px 24px 16px 24px;
+	}
+	.swiper-slide {
+		flex-direction: column;
+	}
+}
