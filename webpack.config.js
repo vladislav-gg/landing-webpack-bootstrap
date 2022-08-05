@@ -7,11 +7,7 @@ module.exports = {
 		path: path.resolve(__dirname, "dist"),
 		assetModuleFilename: "images/[hash][ext][query]",
 	},
-	devServer: {
-		static: path.resolve(__dirname, "dist"),
-		port: 8080,
-		hot: true,
-	},
+
 	module: {
 		rules: [
 			{
@@ -46,4 +42,14 @@ module.exports = {
 			},
 		],
 	},
+	devtool: "eval-source-map",
+	devServer: {
+		port: 3010,
+		static: {
+			directory: "./src",
+		},
+		historyApiFallback: true,
+		hot: true,
+	},
+	mode: "development",
 };
