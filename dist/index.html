@@ -160,7 +160,6 @@
 				</div>
 			</div>
 		</section>
-
 		<section class="carousel-section">
 			<div class="carousel-wrap">
 				<div class="swiper mySwiper">
@@ -186,8 +185,6 @@
 				<div class="swiper-button-next d-none d-sm-block"></div>
 			</div>
 		</section>
-
-		<!-- FOOTER -->
 
 		<footer>
 			<div class="footer-wrapper">
@@ -264,65 +261,24 @@
 		<!-- Swiper script -->
 		<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 		<script src="./main.js"></script>
+
 		<!-- Initialize Swiper -->
 		<script>
-			// let init = false;
-			// function swiperMode() {
-			// 	let mobile = window.matchMedia(
-			// 		"(min-width: 0px) and (max-width: 768px)"
-			// 	);
-			// 	if (mobile.matches) {
-			// 		swiper.destroy();
-			// 		init = false;
-			// 	}
-			// }
-
-			// let swiper = new Swiper(".mySwiper", {
-			// 	slidesPerView: "auto",
-			// 	spaceBetween: 30,
-			// 	navigation: {
-			// 		nextEl: ".swiper-button-next",
-			// 	},
-			// 	pagination: {
-			// 		clickable: true,
-			// 	},
-			// 	mousewheel: true,
-			// 	keyboard: true,
-			// });
-			// window.addEventListener("load", function () {
-			// 	swiperMode();
-			// });
-
-			// /* On Resize
-			//  **************************************************************/
-			// window.addEventListener("resize", function () {
-			// 	swiperMode();
-			// });
-
 			(function () {
 				"use strict";
 
-				// breakpoint where swiper will be destroyed
-				// and switches to a dual-column layout
 				const breakpoint = window.matchMedia(
 					"(min-width: 0px) and (max-width: 768px)"
 				);
 
-				// keep track of swiper instances to destroy later
 				let mySwiper;
 
 				const breakpointChecker = function () {
-					// if larger viewport and multi-row layout needed
 					if (breakpoint.matches === true) {
-						// clean up old instances and inline styles when available
 						if (mySwiper !== undefined) mySwiper.destroy(true, true);
 
-						// or/and do nothing
 						return;
-
-						// else if a small viewport and single column layout needed
 					} else if (breakpoint.matches === false) {
-						// fire small viewport version of swiper
 						return enableSwiper();
 					}
 				};
@@ -342,12 +298,10 @@
 					});
 				};
 
-				// keep an eye on viewport size changes
 				breakpoint.addListener(breakpointChecker);
 
-				// kickstart
 				breakpointChecker();
-			})(); /* IIFE end */
+			})();
 		</script>
 	</body>
 </html>
