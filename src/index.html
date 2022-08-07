@@ -3,6 +3,7 @@
 	<head>
 		<meta charset="utf-8" />
 		<meta name="description" content="The Marketing practice landing" />
+
 		<title>The Marketing practice landing</title>
 		<meta
 			name="viewport"
@@ -86,14 +87,14 @@
 					<img
 						class="img-office"
 						alt="office-chat"
-						src="images/office_chat.jpg"
+						src="./images/office_chat.jpg"
 					/>
 				</div>
 			</div>
 		</section>
 		<section class="services-section">
 			<div
-				class="services-wrap d-flex flex-column flex-sm-row justify-content-between"
+				class="services-wrap d-flex flex-column flex-md-row justify-content-between"
 			>
 				<div class="services-text">
 					<h4>Our services</h4>
@@ -160,29 +161,30 @@
 				</div>
 			</div>
 		</section>
+
 		<section class="carousel-section">
 			<div class="carousel-wrap">
 				<div class="swiper mySwiper">
-					<div class="swiper-wrapper d-none d-sm-flex">
+					<div class="swiper-wrapper d-none d-md-flex">
 						<div class="swiper-slide"></div>
 						<div class="swiper-slide"></div>
 						<div class="swiper-slide"></div>
-						<div class="swiper-slide d-none d-sm-flex"></div>
+						<div class="swiper-slide d-none d-md-flex"></div>
 					</div>
-					<div class="carousel-mobile d-flex flex-column d-sm-none">
+					<div class="carousel-mobile d-flex flex-column d-md-none">
 						<div class="carousel-mobile-wrapper">
-							<img src="images/carousel_slide1.png" alt="a man" />
+							<img src="./images/carousel_slide1.png" alt="" />
 						</div>
 						<div class="carousel-mobile-wrapper">
-							<img src="images/carousel_slide2.gif" alt="gif" />
+							<img src="./images/carousel_slide2.gif" alt="gif" />
 						</div>
 						<div class="carousel-mobile-wrapper">
-							<img src="images/carousel_slide3.jpg" alt="abstract" />
+							<img src="./images/carousel_slide3.jpg" alt="abstract" />
 						</div>
 					</div>
 					<div class="swiper-pagination"></div>
 				</div>
-				<div class="swiper-button-next d-none d-sm-block"></div>
+				<div class="swiper-button-next d-none d-md-block"></div>
 			</div>
 		</section>
 
@@ -190,7 +192,7 @@
 			<div class="footer-wrapper">
 				<div class="footer-top d-flex justify-content-between">
 					<div class="left-side">
-						<p id="top-paragraph">What to know how to grow?</p>
+						<p id="first-p">What to know how to grow?</p>
 						<p>Let us keep you in the loop.</p>
 						<div class="button-wrapper">
 							<button class="text-white">Sign up to newsletter</button>
@@ -235,7 +237,7 @@
 					</div>
 				</div>
 				<div
-					class="footer-bottom d-flex flex-column flex-sm-row justify-content-sm-between"
+					class="footer-bottom d-flex flex-column flex-lg-row justify-content-lg-between"
 				>
 					<div class="left-side-bottom">
 						<img
@@ -246,7 +248,7 @@
 							height="64"
 							class="footer-logo d-block"
 						/>
-						<p class="">©2022 The Marketing Practice</p>
+						<p class="copyright">©2022 The Marketing Practice</p>
 					</div>
 					<div
 						class="right-side-bottom d-flex justify-content-between align-items-end"
@@ -258,8 +260,7 @@
 			</div>
 		</footer>
 
-		<!-- Swiper script -->
 		<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-		<script src="./main.js"></script>
+		<script type="module" src="./js/main.js"></script>
 	</body>
 </html>
