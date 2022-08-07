@@ -7,29 +7,23 @@ header {
 	background-size: cover;
 	overflow: hidden;
 	position: relative;
-
-	.logo-wrap {
-		padding: 32px 0 0 64px;
-	}
+	padding: 24px 56px 48px 24px;
 	.header-content {
+		margin-top: 64px;
 		color: white;
-		max-width: 800px;
-		margin: 160px 0 0 120px;
-		padding: 0 0 100px 0;
 	}
 }
 
-@media screen and (max-width: 768px) {
+/* Large devices (laptops/desktops, 992px and up) */
+@media screen and (min-width: 992px) {
+	.logo-wrap {
+		padding: 32px 0 0 64px;
+	}
 	header {
-		padding: 24px 56px 48px 24px;
-
-		.logo-wrap {
-			padding: 0 0 0 0;
-		}
 		.header-content {
-			margin: 64px 0 0 0;
-			padding-right: 56px;
-			padding-bottom: 48px;
+			margin: 160px 0 0 120px;
+			max-width: 800px;
+			padding: 0 0 100px 0;
 		}
 	}
 }

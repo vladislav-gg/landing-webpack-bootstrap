@@ -2,32 +2,20 @@
 	width: 100%;
 }
 .services-wrap {
-	padding: 96px 120px;
-	// display: flex;
-	// justify-content: space-between;
+	width: 327px;
+	padding: 48px 24px 48px 24px;
 }
 .services-accordion {
-	width: 684px;
+	width: 327px;
 }
 .services-text {
-	max-width: 376px;
+	max-width: 327px;
 	h4 {
 		color: $primary-color;
 	}
 }
-summary {
-	display: flex;
-	justify-content: space-between;
-	font-weight: bold;
-	&::after {
-		display: inline-block;
-		transition: 0.2s;
-		content: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath d='M13.8 0.599976V13.8H0.599976V16.2H13.8V29.4H16.2V16.2H29.4V13.8H16.2V0.599976H13.8Z' fill='%232F2F3B' /%3E%3C/svg%3E");
-	}
-}
-
 details {
-	padding: 32px 0;
+	padding: 16px 0;
 	border-top: 1px solid $main-black;
 	box-sizing: border-box;
 	cursor: pointer;
@@ -35,35 +23,81 @@ details {
 	flex-wrap: nowrap;
 	word-wrap: break-word;
 	p {
-		margin-top: 24px;
-		width: 608px;
+		margin-top: 16px;
+		width: 287px;
+	}
+}
+
+summary {
+	display: flex;
+	justify-content: space-between;
+	font-weight: bold;
+	align-items: center;
+	h3 {
+		margin-bottom: 0;
+	}
+	&::after {
+		display: inline-block;
+		transition: 0.2s;
+		content: url("data:image/svg+xml,%3Csvg width='30' height='30' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg' %3E%3Cpath d='M13.8 0.599976V13.8H0.599976V16.2H13.8V29.4H16.2V16.2H29.4V13.8H16.2V0.599976H13.8Z' fill='%232F2F3B' /%3E%3C/svg%3E");
 	}
 }
 
 details[open] summary::after {
 	transform: rotate(45deg);
 }
+details > summary {
+	list-style: none;
+}
+details > summary::-webkit-details-marker {
+	display: none;
+}
 
 #lower-accordion {
 	border-bottom: 1px solid $main-black;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 390px) {
 	.services-wrap {
-		width: 327px;
-		padding: 48px 24px 48px 24px;
+		width: 100%;
+		padding: 60px 30px;
 	}
 	.services-accordion {
-		width: 327px;
+		width: 100%;
+	}
+
+	details {
+		padding: 32px 0;
+
+		p {
+			margin-top: 24px;
+			width: 80%;
+		}
 	}
 	.services-text {
-		width: 327px;
+		max-width: 70%;
+		padding-right: 8%;
 	}
+}
+@media screen and (min-width: 992px) {
+	.services-wrap {
+		width: 100%;
+		padding: 96px 120px;
+	}
+	.services-accordion {
+		width: 684px;
+	}
+
 	details {
-		padding: 16px 0;
+		padding: 32px 0;
+
 		p {
-			margin-top: 16px;
-			width: 287px;
+			margin-top: 24px;
+			width: 608px;
 		}
+	}
+	.services-text {
+		max-width: 376px;
+		padding-right: 0;
 	}
 }

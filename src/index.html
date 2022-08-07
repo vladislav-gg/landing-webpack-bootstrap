@@ -2,8 +2,8 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8" />
-
-		<title>Hello World</title>
+		<meta name="description" content="The Marketing practice landing" />
+		<title>The Marketing practice landing</title>
 		<meta
 			name="viewport"
 			content="width=device-width, initial-scale=1, shrink-to-fit=no"
@@ -86,7 +86,7 @@
 					<img
 						class="img-office"
 						alt="office-chat"
-						src="images/c1484f1d6e01d2d5ffe6.jpg"
+						src="images/office_chat.jpg"
 					/>
 				</div>
 			</div>
@@ -171,13 +171,13 @@
 					</div>
 					<div class="carousel-mobile d-flex flex-column d-sm-none">
 						<div class="carousel-mobile-wrapper">
-							<img src="images/7fbe75b222d84c236d20.png" alt="a man" />
+							<img src="images/carousel_slide1.png" alt="a man" />
 						</div>
 						<div class="carousel-mobile-wrapper">
-							<img src="images/f764f5b5136f35b26758.gif" alt="gif" />
+							<img src="images/carousel_slide2.gif" alt="gif" />
 						</div>
 						<div class="carousel-mobile-wrapper">
-							<img src="images/52340633a8963b51c57f.jpg" alt="abstract" />
+							<img src="images/carousel_slide3.jpg" alt="abstract" />
 						</div>
 					</div>
 					<div class="swiper-pagination"></div>
@@ -190,7 +190,7 @@
 			<div class="footer-wrapper">
 				<div class="footer-top d-flex justify-content-between">
 					<div class="left-side">
-						<p>What to know how to grow?</p>
+						<p id="top-paragraph">What to know how to grow?</p>
 						<p>Let us keep you in the loop.</p>
 						<div class="button-wrapper">
 							<button class="text-white">Sign up to newsletter</button>
@@ -261,47 +261,5 @@
 		<!-- Swiper script -->
 		<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 		<script src="./main.js"></script>
-
-		<!-- Initialize Swiper -->
-		<script>
-			(function () {
-				"use strict";
-
-				const breakpoint = window.matchMedia(
-					"(min-width: 0px) and (max-width: 768px)"
-				);
-
-				let mySwiper;
-
-				const breakpointChecker = function () {
-					if (breakpoint.matches === true) {
-						if (mySwiper !== undefined) mySwiper.destroy(true, true);
-
-						return;
-					} else if (breakpoint.matches === false) {
-						return enableSwiper();
-					}
-				};
-
-				const enableSwiper = function () {
-					mySwiper = new Swiper(".mySwiper", {
-						slidesPerView: "auto",
-						spaceBetween: 30,
-						navigation: {
-							nextEl: ".swiper-button-next",
-						},
-						pagination: {
-							clickable: true,
-						},
-						mousewheel: true,
-						keyboard: true,
-					});
-				};
-
-				breakpoint.addListener(breakpointChecker);
-
-				breakpointChecker();
-			})();
-		</script>
 	</body>
 </html>
