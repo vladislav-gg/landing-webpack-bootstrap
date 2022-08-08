@@ -23,7 +23,7 @@
 	object-fit: cover;
 }
 
-@media screen and (min-width: 390px) {
+@media screen and (min-width: $screen-xxs-max) {
 	.goals-section-wrap {
 		padding-right: 0;
 	}
@@ -41,7 +41,7 @@
 	}
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: $screen-sm-max) {
 	.goals-section-wrap {
 		padding: 120px 0 120px 120px;
 	}
@@ -59,7 +59,7 @@
 	}
 }
 
-@media screen and (min-width: 1450px) {
+@media screen and (min-width: $screen-xlg-min) {
 	.goals-section-wrap {
 		padding: 120px 0 120px 120px;
 	}

@@ -57,7 +57,7 @@ details > summary::-webkit-details-marker {
 	border-bottom: 1px solid $main-black;
 }
 
-@media screen and (min-width: 390px) {
+@media screen and (min-width: $screen-xxs-max) {
 	.services-wrap {
 		width: 100%;
 		padding: 60px 30px;
@@ -79,7 +79,7 @@ details > summary::-webkit-details-marker {
 		padding-right: 8%;
 	}
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: $screen-sm-max) {
 	.services-wrap {
 		width: 100%;
 		padding: 96px 120px;

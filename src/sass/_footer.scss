@@ -35,7 +35,7 @@ footer {
 	font-weight: 700;
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: $screen-sm-max) {
 	.footer-wrapper {
 		padding: 80px 170px 55px 120px;
 	}
